@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Addition</h1>
+
+    <input type="number" id="no1" placeholder="Enter Number 1"> <br>
+    <input type="number" id="no2" placeholder="Enter Number 2"> <br>
+
+    <button onclick="add()"> Add</button>
+
+    <h2> Result: <span id="result"></span></h2>
+
+
+    <script>
+
+
+function  add()  {
+    var no1 = document.getElementById("no1").value;
+    var no2 = document.getElementById("no2").value;
+    no1 = parseInt(no1);
+    no2 = parseInt(no2);
+
+    var result = document.getElementById("result").innerHTML = no1 + no2;
+
+
+}
+    </script>
+</body>
+</html>
